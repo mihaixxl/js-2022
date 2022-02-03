@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+input {
+    border-radius: 20%;
+    background-color: orange;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: teal;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 2em;
+}
+.letter {
+    color: red;
+    width: 1em;
+    height: 1em;
+    font-family: sans-serif;
+    text-align: center;
+
+}
