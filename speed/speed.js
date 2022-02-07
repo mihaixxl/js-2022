@@ -1,23 +1,23 @@
 
 function randomNumber(max) {
-   return Math.round(Math.random() * max)
+    return Math.round(Math.random() * max)
 }
 
 function randomLetter() {
-   let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' 
-   let i = randomNumber(letters.length - 1)
-   return letters[i]
+    let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let i = randomNumber(letters.length - 1)
+    return letters[i]
 }
 
 function randomColor() {
     let red = randomNumber(255)
     let green = randomNumber(255)
     let blue = randomNumber(255)
-    return `rgb(${red}, ${green}, ${blue})` 
+    return `rgb(${red}, ${green}, ${blue})`
 }
 
 function randomLetterElement() {
-    let div =document.createElement('div')
+    let div = document.createElement('div')
     div.innerText = randomLetter()
     div.style.backgroundColor = randomColor()
     div.style.top = randomNumber(99) + 'vh'
@@ -29,14 +29,15 @@ function randomLetterElement() {
 async function run() {
     var gameOver = false
     hideStart()
-    while (!gameOver) {
+    while(!gameOver) {
         randomLetterElement()
-        await new Promise(r => setTimeout(r,2000))
+        await new Promise(r => setTimeout(r, 2000))
     }
 }
+
 function hideStart() {
     document.querySelector('input').style.display = 'none'
-
 }
+
 document.querySelector('input').addEventListener('click', run)
 
