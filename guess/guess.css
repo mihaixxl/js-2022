@@ -1,0 +1,26 @@
+body{
+    font-style: italic;
+    margin-top: 200px;
+    color: red;
+    text-align: center;
+    display: block;
+    border-radius: 40%;
+    font-size: 2em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+input {
+    border-radius: 20%;
+    color: blue;
+    text-align: center;
+    height: 1.5em;
+    font-size: 2em;
+    background-color:coral;
+    border-color:black;
+}
+#number {
+    border: 2em;
+    color:green;
+    font-size: 2em;
+    font-style: italic;
+}

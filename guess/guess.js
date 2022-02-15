@@ -12,7 +12,7 @@ function check() {
     let checkedNumber = document.querySelector('#number').value
 
     if (chosenNumber == checkedNumber) {
-        result.innerText = 'Ai ghicit!'
+        result.innerText  =  'Ai ghicit! ' 
     } else if (chosenNumber > checkedNumber) {
         result.innerText = 'Prea mic'
     } else {
